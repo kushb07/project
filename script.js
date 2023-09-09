@@ -13,7 +13,7 @@ let previous = document.getElementById("previous");
 let songnamemaster = document.getElementById('songnamemaster');
 
 let songs = [
-    {songName :"we dont talk anymore" , filepath: "1.mp3"}, 
+    {songName :"we dont talk anymore" , filepath: "./1.mp3"}, 
     {songName :"Brown Munde" , filepath: "2.mp3"}, 
     {songName :"I am albatraoz" , filepath: "3.mp3"}, 
     {songName :"Animals - martin garrix" , filepath: "4.mp3"}, 
