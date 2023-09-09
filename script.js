@@ -2,7 +2,7 @@ console.log("Welcome to Spotify");
 
 //intialising the index -->
 let index  =0;
-let AudioElement = new Audio('../songs/1.mp3');
+let AudioElement = new Audio('1.mp3');
 let masterPlay = document.getElementById("masterPlay");
 let progressBar = document.getElementById("progressBar");
 let gif = document.getElementById('gif');
@@ -13,15 +13,15 @@ let previous = document.getElementById("previous");
 let songnamemaster = document.getElementById('songnamemaster');
 
 let songs = [
-    {songName :"we dont talk anymore" , filepath: "../songs/1.mp3"}, 
-    {songName :"Brown Munde" , filepath: "../songs/2.mp3"}, 
-    {songName :"I am albatraoz" , filepath: "../songs/3.mp3"}, 
-    {songName :"Animals - martin garrix" , filepath: "../songs/4.mp3"}, 
-    {songName :"Sadi gali" , filepath: "../songs/5.mp3"}, 
-    {songName :"NaJa - hardy sandhu" , filepath: "../songs/6.mp3"}, 
-    {songName :"Shape of you" , filepath: "../songs/7.mp3"}, 
-    {songName :"Kya baat ay" , filepath: "../songs/8.mp3"}, 
-    {songName :"Believer" , filepath: "../songs/9.mp3"}, 
+    {songName :"we dont talk anymore" , filepath: "1.mp3"}, 
+    {songName :"Brown Munde" , filepath: "2.mp3"}, 
+    {songName :"I am albatraoz" , filepath: "3.mp3"}, 
+    {songName :"Animals - martin garrix" , filepath: "4.mp3"}, 
+    {songName :"Sadi gali" , filepath: "5.mp3"}, 
+    {songName :"NaJa - hardy sandhu" , filepath: "6.mp3"}, 
+    {songName :"Shape of you" , filepath: "7.mp3"}, 
+    {songName :"Kya baat ay" , filepath: "8.mp3"}, 
+    {songName :"Believer" , filepath: "9.mp3"}, 
 ]
 
 // AudioElement.play();
@@ -85,7 +85,7 @@ songitemplay.forEach((elements)=>{
         index = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        AudioElement.src = `../songs/${index+1}.mp3`;
+        AudioElement.src = `${index+1}.mp3`;
         //naya gana lagne par shuru se chalu hona chhiye-->
         AudioElement.currentTime = 0;
         AudioElement.play();
@@ -107,7 +107,7 @@ next.addEventListener("click" ,(element)=>{
         index +=1;
     }
 
-    AudioElement.src = `../songs/${index+1}.mp3`;
+    AudioElement.src = `${index+1}.mp3`;
     songnamemaster.innerText =songs[index].songName ;
     //naya gana lagne par shuru se chalu hona chhiye-->
     AudioElement.currentTime = 0;
@@ -129,7 +129,7 @@ previous.addEventListener("click" ,()=>{
         index -=1;
     }
 
-    AudioElement.src = `../songs/${index+1}.mp3`;
+    AudioElement.src = `${index+1}.mp3`;
     //naya gana lagne par shuru se chalu hona chhiye-->
     songnamemaster.innerText = songs[index].songName;
     AudioElement.currentTime = 0;
