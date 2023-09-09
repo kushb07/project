@@ -25,6 +25,7 @@ ul{
 }
 ul li{
     margin:2px 12px;
+    cursor:pointer;
 }
 
 .brand img{
@@ -50,7 +51,7 @@ ul li{
     display: flex;
     border-radius: 17px;
     padding:12px;
-    background : url('../img/bg.webp') no-repeat center center/cover;
+    background : url('bg.webp') no-repeat center center/cover;
 }
 
 
